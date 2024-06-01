@@ -190,7 +190,7 @@ def predict_individual_gullibility(classifier, df, settings):
 
     # Displaying prediction statement
     st.write(
-        f"{individual} is{' ' if prediction.iloc[0] else ' not '}gullible with a confidence level of {prediction_probs[0]:.2f}.")
+        f"{individual} is{' ' if prediction.iloc[0] else ' '}gullible with a confidence level of {prediction_probs[0]:.2f}.")
 
     # Displaying gullible individuals in a wide table
     st.subheader("Gullible Individuals:")
